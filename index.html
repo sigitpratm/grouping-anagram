@@ -53,11 +53,11 @@
   function groupingAnagram(inputData) {
     let result = {};
     for (let arrayVal of inputData) {
-      let formatetd = arrayVal.split("").sort().join("");
-      if (result[formatetd]) {
-        result[formatetd].push(arrayVal);
+      let formated = arrayVal.split("").sort().join("");
+      if (result[formated]) {
+        result[formated].push(arrayVal);
       } else {
-        result[formatetd] = [arrayVal];
+        result[formated] = [arrayVal];
       }
     }
 
